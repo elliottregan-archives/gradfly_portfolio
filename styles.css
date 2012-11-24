@@ -49,6 +49,13 @@ ul figure {
   margin: 0;
   position: relative;
   z-index: 10;
+  
+  margin: 10px;
+  background-color: #ffffff;
+  border: 4px solid rgba(255, 255, 255, 0.53);
+  -moz-box-shadow: inset -4px 0 0 #ffffff;
+  -webkit-box-shadow: inset -4px 0 0 #ffffff;
+  box-shadow: inset -4px 0 0 #ffffff;
 }
 
 ul figure img {
@@ -62,6 +69,7 @@ ul figure figcaption {
   width: 100%;
   padding: 10px;
   bottom: 0px;
+  left: 0;
   line-height: 1.1em;
   z-index: 20;
   border-top: 1px solid rgba(255, 255, 255, 0.59);
