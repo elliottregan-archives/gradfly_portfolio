@@ -4,16 +4,27 @@ body {
   background: url(noise.png) #d7d7d7;
 }
 
+.logo.bg {
+  display: block;
+  width: 800px; height: 200px;
+  background-size: 80%;
+  right: 20px;
+  bottom: -37px;
+  position: fixed;
+  opacity: .4;
+  background: url(gf_logo_black.svg) no-repeat right bottom;
+}
+
 h1 {
   font-weight: bold;
   font-size: 3em;
-  margin: 0;
+  margin: 0 10px;
 }
 
 h2 {
   font-weight: 500;
   color: #454545;
-  margin: 0;
+  margin: 0 10px;
 }
 
 h3 {
@@ -25,6 +36,34 @@ p {
   font-size: .9em;
   padding: 0;
   margin: 0;
+}
+
+.details {
+  background-color: rgba(255, 255, 255, 0.79);
+  padding: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.86);
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  width: 24px; height: 100%;
+  background-size: 100%;
+  background: no-repeat center center;
+  right: 30px;
+  top: 5px;
+}
+
+.icon.cal {
+  background-image: url(cal.svg);
+}
+
+.icon.code {
+  background-image: url(code.svg);
+}
+
+.icon.block {
+  background-image: url(block.svg);
 }
 
 ul {
@@ -40,13 +79,17 @@ ul {
    column-gap:           0px;
 
 }
+
+ul figure h3, ul figure p  {
+  padding: 10px;
+}
+
 ul figure {
   /* Just in case there are inline attributes */
   width: 100% !important;
   height: auto !important;
 
   padding: 0;
-  margin: 0;
   position: relative;
   z-index: 10;
   
@@ -72,7 +115,6 @@ ul figure figcaption {
   
   position: absolute;
   width: 100%;
-  padding: 10px;
   bottom: 0px;
   left: 0;
   line-height: 1.1em;
